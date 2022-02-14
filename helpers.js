@@ -13,8 +13,6 @@ ReCharge.Novum.Helpers = {
                     type="number"
                     value="${quantity}"
                     min="1"
-                    name="quantity"
-                    id="variant_quantity"
                     class="text-center align-self-center"
                     style="pointer-events:none;"
                     readonly
