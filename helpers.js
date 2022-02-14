@@ -5,23 +5,7 @@ ReCharge.Novum.Helpers = {
         let settings = {{ settings | json }};
 
         return `
-            <div class="element__flex-column">
-                <div>
-                    <img src="${imageSrc}" class="variant-image" alt="${ product.shopify_details.title.replace('Auto renew', '')}">
-                </div>
-
-                <h4>
-                    ${product.shopify_details.title.replace('Auto renew', '')}
-                </h4>
-
-                <div class="flex-center">
-                    <span class="js-rc_product_icon margin-right-5"> </span>
-                    <span id="variant-price" class="text-font-14 js-product-price" data-price="${price}">
-                        ${ReCharge.Novum.Utils.getCurrency()}${Number(price).toFixed(2)}
-                    </span>
-                </div>
-            </div>
-
+        
             <label class="text-font-14">{{ 'Quantity' | t }}</label>
             <div class="rc_product_quantity border-light margin-top-8" onclick="ReCharge.Novum.Helpers.quantityHandler(event)">
                 <span class="button-minus margin-left-5" style="${settings.customer_portal.subscription.change_quantity ? '' : 'pointer-events:none;visibility:hidden;' }">-</span>
