@@ -12,7 +12,6 @@ ReCharge.Novum.Helpers = {
                 <input
                     type="number"
                     value="${quantity}"
-                    min="1"
                     class="text-center align-self-center"
                     style="pointer-events:none;"
                     readonly
